@@ -1,13 +1,15 @@
 # SAR2RZSM
 
 ### Objective: 
-Correlate radar backscatter ($\sigma$) observations to root zone soil moisture. 
+Examine the relationship between radar backscatter ($\sigma$) observations, root zone soil moisture, and leaf water potential. 
+
+<img src="sigma_v_SM.png" width="400">
 
 ### Theoretical Basis and Approach
 Leaf water potential ($\Psi$) should correlate with RZSM. 
 Studies (1,2) show that $\Psi$ can be retrieved via passive microwave observations.
 This is due to the sensitivity of the microwave spectrum to the dielectric constant of water. 
-So, active radar (e.g. Sentinel SAR) should also be able to retrieve measurements of 
+So, active radar (e.g. Sentinel SAR) should also be able to be used for soil moisture estimation
 
 ### Notes: 
 only ascending orbits are used
@@ -16,8 +18,8 @@ only ascending orbits are used
 1. List of SCAN sites: https://wcc.sc.egov.usda.gov/nwcc/yearcount?network=scan&counttype=statelist&state=
 2. Sentinel-1 C band SAR: 
         Data availability: 2014-10-03 – Present
+        Repeat frequency: ~20 days (only ascending orbits)
         
-
 #### to get the SCAN data
 1. Go to https://wcc.sc.egov.usda.gov/reportGenerator/ and build a query with desired columns. 
 
