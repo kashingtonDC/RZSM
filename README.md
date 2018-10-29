@@ -26,6 +26,10 @@ auto generate a table of data for a given `site_id` using the following URL and 
 
 https://wcc.sc.egov.usda.gov/reportGenerator/view_csv/customMultiTimeSeriesGroupByStationReport,metric/hourly/start_of_period/2218:CA:SCAN%7Cid=%22%22%7Cname/-35315,-11/SMS:-2:value,SMS:-4:value,SMS:-8:value,SMS:-20:value,SMS:-40:value
 
+TODO: Explore POLARIS gridded 30m soil texture data: 
+
+1. http://agris.fao.org/agris-search/search.do?recordID=US201600281048
+2. http://stream.princeton.edu/POLARIS/
 
         
 ### Questions and TODO:
@@ -34,5 +38,5 @@ https://wcc.sc.egov.usda.gov/reportGenerator/view_csv/customMultiTimeSeriesGroup
 2. Time periods of interest? 
 3. Sampling frequency? 
     daily? hourly? 
-4. Polarizations? 
+4. Polarizations? - In general, HV polarization should be best. Why is this again?
 
