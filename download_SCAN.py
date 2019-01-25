@@ -31,14 +31,7 @@ def get_site_lat_lons(site_num, stations_csv):
 
 
 csvs = glob.glob("*.csv")
-txts = glob.glob("*.txt")
-site_file = txts[0]
 stations_csv = csvs[0]
-
-site_no = ''.join(c for c in site_file if c.isdigit())
-data = read_file(site_file)
-lat, lon = get_site_lat_lons(site_no,stations_csv)
-
 df = pd.read_csv(csvs[0])
 
 names = list(df.site_name)
