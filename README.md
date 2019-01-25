@@ -23,14 +23,14 @@ This study seeks to examine empirical relations between backscatter and biophysi
 	Only soil moisture data without prior 3-day precipitation is used. 
 
 ## Data
-1. Soil Moisture (response variable, measured in situ):
-		Soil Climate Analysis Network data
-		List of SCAN sites: https://wcc.sc.egov.usda.gov/nwcc/yearcount?network=scan&counttype=statelist&state=
-2. Sentinel-1 C band SAR: 
+###Soil Moisture (response variable, measured in situ):
+	Soil Climate Analysis Network data
+	List of SCAN sites: https://wcc.sc.egov.usda.gov/nwcc/yearcount?network=scan&counttype=statelist&state=
+###Sentinel-1 C band SAR: 
         Data availability: 2014-10-03 – Present
         Ascending Orbits Only
         Polarizations: VV, HV 
-3. PRISM precipitation data
+###PRISM precipitation data
 		Daily, ... 5-day sums are calculated at each SCAN site to filter out SM observations during saturated conditions
 
 
