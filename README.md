@@ -1,23 +1,35 @@
 # SAR2RZSM
 
 ### Objective: 
-Correlate radar backscatter ($\sigma$) observations to root zone soil moisture. 
+Examine relationships between radar backscatter, soil moisture, leaf water potential, and other hydrobiophysical parameters
 
 <img src="sigma_v_SM.png" width="400">
 
-### Theoretical Basis and Approach
-Leaf water potential ($\Psi$) should correlate with RZSM. 
-Studies (1,2) show that $\Psi$ can be retrieved via passive microwave observations.
-This is due to the sensitivity of the microwave spectrum to the dielectric constant of water. 
-So, active radar (e.g. Sentinel SAR) should also be able to retrieve measurements of 
+\
+### Introduction
+The determination of both Leaf water potential ($\Psi$) and root zone soil moisture from microwave satellite observations has been demonstrated by many studies. These parameters can be retrieved due to the sensitivity of the microwave spectrum to the dielectric constant of water. Studies (1,2) show that can be retrieved via passive microwave observations. While useful, the practical application ofpassive microwave retrievals are inhibited by coarse resolution (ref). Active radar (e.g. Sentinel SAR) offers the potential to retrieve measurements of RZSM at much higher resolution. However, a number of factors complicate this this process, including vegetation, double bounces, and more. 
 
-### Notes: 
-only ascending orbits are used
+This study seeks to examine empirical relations between backscatter and biophysical paramters using in Situ SCAN sites as ground truth. 
+
+Pedotransfer Functions 
+	Are used to transform measured soil moisture to leaf water potential
+
+Filtering
+	Only Ascending S1 orbits are used
+	Only soil moisture data without prior 3-day precipitation is used. 
 
 ### Data
-1. List of SCAN sites: https://wcc.sc.egov.usda.gov/nwcc/yearcount?network=scan&counttype=statelist&state=
+1. Soil Moisture (response variable, measured in situ):
+		Soil Climate Analysis Network data
+		List of SCAN sites: https://wcc.sc.egov.usda.gov/nwcc/yearcount?network=scan&counttype=statelist&state=
 2. Sentinel-1 C band SAR: 
         Data availability: 2014-10-03 – Present
+        Ascending Orbits Only
+        Polarizations: VV, HV
+3. PRISM precipitation data
+		Daily, ... 5-day sums are calculated at each SCAN site to 
+
+### Procedure
         
 
 #### to get the SCAN data
