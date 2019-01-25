@@ -5,32 +5,36 @@ Examine relationships between radar backscatter, soil moisture, leaf water poten
 
 <img src="sigma_v_SM.png" width="400">
 
-\
-### Introduction
+
+## Introduction
 The determination of both Leaf water potential ($\Psi$) and root zone soil moisture from microwave satellite observations has been demonstrated by many studies. These parameters can be retrieved due to the sensitivity of the microwave spectrum to the dielectric constant of water. Studies (1,2) show that can be retrieved via passive microwave observations. While useful, the practical application ofpassive microwave retrievals are inhibited by coarse resolution (ref). Active radar (e.g. Sentinel SAR) offers the potential to retrieve measurements of RZSM at much higher resolution. However, a number of factors complicate this this process, including vegetation, double bounces, and more. 
 
-This study seeks to examine empirical relations between backscatter and biophysical paramters using in Situ SCAN sites as ground truth. 
+This study seeks to examine empirical relations between backscatter and biophysical paramters using in Situ SCAN sites as ground truth.
 
-Pedotransfer Functions 
+## Methods
+
+## Preprocessing
+
+#### Pedotransfer Functions 
 	Are used to transform measured soil moisture to leaf water potential
 
-Filtering
+#### Filtering
 	Only Ascending S1 orbits are used
 	Only soil moisture data without prior 3-day precipitation is used. 
 
-### Data
+## Data
 1. Soil Moisture (response variable, measured in situ):
 		Soil Climate Analysis Network data
 		List of SCAN sites: https://wcc.sc.egov.usda.gov/nwcc/yearcount?network=scan&counttype=statelist&state=
 2. Sentinel-1 C band SAR: 
         Data availability: 2014-10-03 – Present
         Ascending Orbits Only
-        Polarizations: VV, HV
+        Polarizations: VV, HV 
 3. PRISM precipitation data
-		Daily, ... 5-day sums are calculated at each SCAN site to 
+		Daily, ... 5-day sums are calculated at each SCAN site to filter out SM observations during saturated conditions
 
-### Procedure
-        
+
+## Notes
 
 #### to get the SCAN data
 1. Go to https://wcc.sc.egov.usda.gov/reportGenerator/ and build a query with desired columns. 
