@@ -3,6 +3,8 @@
 ### Objective: 
 Correlate radar backscatter ($\sigma$) observations to root zone soil moisture. 
 
+<img src="sigma_v_SM.png" width="400">
+
 ### Theoretical Basis and Approach
 Leaf water potential ($\Psi$) should correlate with RZSM. 
 Studies (1,2) show that $\Psi$ can be retrieved via passive microwave observations.
