@@ -26,11 +26,13 @@ auto generate a table of data for a given `site_id` using the following URL and 
 
 https://wcc.sc.egov.usda.gov/reportGenerator/view_csv/customMultiTimeSeriesGroupByStationReport,metric/hourly/start_of_period/2218:CA:SCAN%7Cid=%22%22%7Cname/-35315,-11/SMS:-2:value,SMS:-4:value,SMS:-8:value,SMS:-20:value,SMS:-40:value
 
-TODO: Explore POLARIS gridded 30m soil texture data: 
+### Soils data is painful to query
 
-1. http://agris.fao.org/agris-search/search.do?recordID=US201600281048
-2. http://stream.princeton.edu/POLARIS/
+Work around: 
+Access soilDB R package and submit bbox query to get the soil "mapunit"
 
+Then use this lookup table which has sand, silt, clay fractions for each map unit: 
+http://www.soilinfo.psu.edu/index.cgi?soil_data&conus&data_cov&fract&datasets&lam
         
 ### Questions and TODO:
 
@@ -39,4 +41,6 @@ TODO: Explore POLARIS gridded 30m soil texture data:
 3. Sampling frequency? 
     daily? hourly? 
 4. Polarizations? - In general, HV polarization should be best. Why is this again?
+
+
 
