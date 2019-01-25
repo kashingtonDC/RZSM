@@ -15,10 +15,10 @@ This study seeks to examine empirical relations between backscatter and biophysi
 
 ## Preprocessing
 
-#### Pedotransfer Functions 
+### Pedotransfer Functions 
 	Are used to transform measured soil moisture to leaf water potential
 
-#### Filtering
+### Filtering
 	Only Ascending S1 orbits are used
 	Only soil moisture data without prior 3-day precipitation is used. 
 
