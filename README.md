@@ -45,12 +45,13 @@ This study seeks to examine empirical relations between backscatter and biophysi
 
 	Then use this lookup table which has sand, silt, clay fractions for each map unit: 
 	http://www.soilinfo.psu.edu/index.cgi?soil_data&conus&data_cov&fract&datasets&lam
+
+	This is how sand, silt, clay fractions were calculated:
+	http://www.soilinfo.psu.edu/index.cgi?soil_data&conus&data_cov&fract&methods
     
 ## Notes
 
 ### Questions and TODO:
-1. Sites of interest?
-2. Time periods of interest? 
-3. Sampling frequency? 
-    daily? hourly? 
-4. Polarizations? - In general, HV polarization should be best. Why is this again?
+1. Able to access 126 / 225 sites - is this sufficient? 
+2. How to average SCAN data (across 5 horizons, at different times)
+3. How to average SURGO data (across 11 horizons)
