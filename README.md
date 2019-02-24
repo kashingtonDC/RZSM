@@ -16,9 +16,9 @@ This study seeks to examine empirical relations between backscatter and biophysi
 
 ### Pedotransfer Functions 
 	Are used to transform measured soil moisture to leaf water potential
-	`mu_fract.ascii` is a lookup table relating each soil map unit (State_ID Site_ID format) to %clay, %silt, %sand
-	see: http://www.soilinfo.psu.edu/index.cgi?soil_data&conus&data_cov&fract&methods
-	TOOD: Add reference 
+	Soils data is taken from the Harmonized World Soil Database:
+    http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-v12/en/
+    
 
 ### Filtering (S1, Precipitation, SM )
 	Only Ascending S1 orbits are used
@@ -40,18 +40,10 @@ This study seeks to examine empirical relations between backscatter and biophysi
 ### PRISM precipitation data (EE):
 	Daily, ... 5-day sums are calculated at each SCAN site to filter out SM observations during saturated conditions
 
-### Soil Texture (Soil units: USDA, Soil texture: Penn State):
-	Workflow: Access soilDB R package and submit bbox query to get the soil "mapunit"
-
-	Then use this lookup table which has sand, silt, clay fractions for each map unit: 
-	http://www.soilinfo.psu.edu/index.cgi?soil_data&conus&data_cov&fract&datasets&lam
-
-	This is how sand, silt, clay fractions were calculated:
-	http://www.soilinfo.psu.edu/index.cgi?soil_data&conus&data_cov&fract&methods
+### Soil Texture:
+    Harmonized World Soil Database
+    http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-v12/en/
     
 ## Notes
 
 ### Questions and TODO:
-1. Able to access 126 / 225 sites - is this sufficient? 
-2. How to average SCAN data (across 5 horizons, at different times)
-3. How to average SURGO data (across 11 horizons)
