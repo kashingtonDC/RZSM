@@ -16,8 +16,8 @@ This study seeks to examine empirical relations between backscatter and biophysi
 
 ### Pedotransfer Functions 
 	Are used to transform measured soil moisture to leaf water potential
-	Soils data is taken from the Harmonized World Soil Database:
-    http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-v12/en/
+    Unified North American Soil Map
+    https://daac.ornl.gov/NACP/guides/NACP_MsTMIP_Unified_NA_Soil_Map.html
     
 
 ### Filtering (S1, Precipitation, SM )
@@ -41,7 +41,9 @@ This study seeks to examine empirical relations between backscatter and biophysi
 	Daily, ... 5-day sums are calculated at each SCAN site to filter out SM observations during saturated conditions
 
 ### Soil Texture:
-    Harmonized World Soil Database
+    Unified North American Soil Map
+    https://daac.ornl.gov/NACP/guides/NACP_MsTMIP_Unified_NA_Soil_Map.html
+    Not using: Harmonized World Soil Database
     http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-v12/en/
     
 ## Notes
