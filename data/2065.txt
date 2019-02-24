@@ -52,7 +52,7 @@
 # Alaska  SCAN Site - 80 ft
 # Reporting Frequency: Hourly; Date Range: 2015-01-14 00:00 to 2019-01-24 19:00
 #
-# As of: Jan 24, 2019 7:31:23 PM GMT-08:00
+# As of: Jan 24, 2019 7:59:50 PM GMT-08:00
 #
 Date,Aniak (2065) Soil Moisture Percent -2in (pct),Aniak (2065) Soil Moisture Percent -4in (pct),Aniak (2065) Soil Moisture Percent -8in (pct),Aniak (2065) Soil Moisture Percent -20in (pct),Aniak (2065) Soil Moisture Percent -40in (pct)
 2015-01-14 00:00,8.0,8.0,8.0,8.0,33.0

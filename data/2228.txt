@@ -1,0 +1,57 @@
+#------------------------------------------------- WARNING --------------------------------------------
+# 
+# The data you have obtained from this automated Natural Resource Conservation Service 
+# database are subject to revision regardless of indicated Quality Assurance level. 
+# Data are released on condition that neither the NRCS nor the United States Government 
+# may be held liable for any damages resulting from its use. 
+# 
+# Help and Tutorials: http://www.wcc.nrcs.usda.gov/report_generator/report_generator_landing.htm
+# 
+# Support Contact: nrcsprod@midatl.service-now.com
+# 
+#------------------------------------------------------------------------------------------------------
+# 
+# Reporting Frequency: Hourly
+# Date Range: 2015-01-14 00:00 to 2019-01-24 20:00
+#
+# Data for the following site(s) are contained in this file:
+#
+#	SCAN 2228: Nacogdoches, TX
+# 
+# Data items provided in this file:
+#
+# Element Name           Value Type  Function Type  Function Duration  Base Data  Measurement Units  Sensor Depth  Element Code  Description                       
+# Soil Moisture Percent  Value       None           Instantaneous      N/A        Percent            -2            SMS           Percent volumetric soil moisture  
+# Soil Moisture Percent  Value       None           Instantaneous      N/A        Percent            -4            SMS           Percent volumetric soil moisture  
+# Soil Moisture Percent  Value       None           Instantaneous      N/A        Percent            -8            SMS           Percent volumetric soil moisture  
+# Soil Moisture Percent  Value       None           Instantaneous      N/A        Percent            -20           SMS           Percent volumetric soil moisture  
+# Soil Moisture Percent  Value       None           Instantaneous      N/A        Percent            -40           SMS           Percent volumetric soil moisture  
+# 
+# Quality Control flags included:
+#
+# Flag    Name                Description
+#  V      Valid               Validated Data
+#  N      No Profile          No profile for automated validation
+#  E      Edit                Edit, minor adjustment for sensor noise
+#  B      Back Estimate       Regression-based estimate for homogenizing collocated Snow Course and Snow Pillow data sets
+#  K      Estimate            Estimate
+#  X      External Estimate   External estimate
+#  S      Suspect             Suspect data
+# 
+# Quality Assurance flags included:
+#
+# Flag    Name                Description
+#  U      Unknown             Unknown
+#  R      Raw                 No Human Review
+#  P      Provisional         Preliminary Human Review
+#  A      Approved            Processing and Final Review Completed
+# 
+#------------------------------------------------------------------------------------------------------
+# 
+# Nacogdoches (2228) 
+# Texas  SCAN Site - 245 ft
+# Reporting Frequency: Hourly; Date Range: 2015-01-14 00:00 to 2019-01-24 20:00
+#
+# As of: Jan 24, 2019 8:23:52 PM GMT-08:00
+#
+Date,Nacogdoches (2228) Soil Moisture Percent -2in (pct),Nacogdoches (2228) Soil Moisture Percent -4in (pct),Nacogdoches (2228) Soil Moisture Percent -8in (pct),Nacogdoches (2228) Soil Moisture Percent -20in (pct),Nacogdoches (2228) Soil Moisture Percent -40in (pct)
