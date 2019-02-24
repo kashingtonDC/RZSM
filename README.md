@@ -49,3 +49,6 @@ This study seeks to examine empirical relations between backscatter and biophysi
 ## Notes
 
 ### Questions and TODO:
+    LAI --> Above Ground Biomass
+    LAI EE: ee.ImageCollection("MODIS/006/MCD15A3H")
+    
