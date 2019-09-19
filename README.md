@@ -36,9 +36,16 @@ This study seeks to examine empirical relations between backscatter and biophysi
     Data availability: 2014-10-03 – Present
     Ascending Orbits Only
     Polarizations: VV, HV
+    Naming convention: (https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/naming-conventions)
 
 ### PRISM precipitation data (EE):
-	Daily, ... 5-day sums are calculated at each SCAN site to filter out SM observations during saturated conditions
+	2-day sums are calculated at each SCAN site to filter out SM observations during saturated conditions
+
+### MODIS / Landsat LAI 
+    
+
+### MODIS / Landsat / Proba NDVI 
+
 
 ### Soil Texture:
     Unified North American Soil Map
