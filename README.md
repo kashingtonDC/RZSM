@@ -10,9 +10,7 @@ The determination of both Leaf water potential ($\Psi$) and root zone soil moist
 
 This study seeks to examine empirical relations between backscatter and biophysical paramters using in Situ SCAN sites as ground truth.
 
-## Methods
-
-## Preprocessing
+## Methods and Preprocessing
 
 ### Pedotransfer Functions 
 	Are used to transform measured soil moisture to leaf water potential
@@ -21,9 +19,9 @@ This study seeks to examine empirical relations between backscatter and biophysi
     
 
 ### Filtering (S1, Precipitation, SM )
-	Only Ascending S1 orbits are used
-	Currently, VV polarization and HV have been tested. Number of S1 Overpass differs
-	Only soil moisture data without prior 3-day precipitation is used
+	Only Ascending S1 orbits with VV polarization are used
+    Eliminated sites in Alaska, Puerto Rico, Hawaii from SCAN db
+    Filter out soil moisture values with preceding precipitation determined by PRISM 
 
 ## Data
 
@@ -44,7 +42,7 @@ This study seeks to examine empirical relations between backscatter and biophysi
 ### MODIS / Landsat LAI 
     
 
-### MODIS / Landsat / Proba NDVI 
+### MODIS / Landsat / Proba NDVI   
 
 
 ### Soil Texture:
