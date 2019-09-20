@@ -359,6 +359,34 @@ def array_from_df(df, variable):
 
 # This is the staging area. Haven's used these in a while, or not tested altogether. 
 
+
+def get_QA_bits(image, start, end, field_name):
+	
+	'''
+	retrieve quality bits from landsat
+	'''
+	
+	pattern = 0
+	for i in range(start,end+1):
+		pattern += 2**i
+	return image.select([0], [field_name]).bitwiseAnd(pattern).rightShift(start)
+
+def mask_quality(image):
+	
+	'''
+	mask clouds and shoaws from landsat
+	'''
+	
+	QA = image.select('pixel_qa')
+	# Get the internal_cloud_algorithm_flag bit.
+	shad = get_QA_bits(QA,3,3,'cloud_shadow')
+	cloud = get_QA_bits(QA,5,5,'cloud')
+	cirrus_detected = get_QA_bits(QA,9,9,'cirrus_detected')
+	#Return an image masking out cloudy areas.
+	return image.updateMask(shad.eq(0)).updateMask(cloud.eq(0).updateMask(cirrus_detected.eq(0))).unmask()
+
+
+
 def img_to_arr(eeImage, var_name, area):
 	temp = eeImage.select(var_name).clip(area)
 	latlon = eeImage.pixelLonLat().addBands(temp)
@@ -608,8 +636,9 @@ def load_data():
 	data['modis_snow1'] = [ee.ImageCollection('MODIS/006/MOD10A1'), "NDSI_Snow_Cover",  1, 2500] # reduced resolution  
 	data['modis_snow2'] = [ee.ImageCollection('MODIS/006/MYD10A1'), "NDSI_Snow_Cover",  1, 2500]  # reduced resolution 
 	data['modis_ndvi'] = [ee.ImageCollection('MODIS/MCD43A4_NDVI'), "NDVI",  1, 500] 
+	data['modis_lai'] = [ee.ImageCollection("MODIS/006/MCD15A3H"), "Lai",  1, 500] 
 
-	data['landsat_8_b1'] = [ee.ImageCollection('LANDSAT/LC08/C01/T1_SR'), "B1" ,  0.001, 30] 
+	data['l8_sr'] = [ee.ImageCollection("LANDSAT/LC08/C01/T1_SR"), "", 0.0001	, 30]
 
 	#########################
 	##### RADAR data ########
