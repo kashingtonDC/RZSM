@@ -30,7 +30,7 @@ def get_site_lat_lons(site_num, stations_csv):
     return lat[0], lon[0]
 
 
-csvs = glob.glob("*.csv")
+csvs = glob.glob("../*.csv")
 stations_csv = csvs[0]
 df = pd.read_csv(csvs[0])
 
