@@ -6,9 +6,7 @@ Examine relationships between radar backscatter, soil moisture, leaf water poten
 <img src="sigma_v_SM.png" width="400">
 
 ## Introduction
-The determination of both Leaf water potential ($\Psi$) and root zone soil moisture from microwave satellite observations has been demonstrated by many studies. These parameters can be retrieved due to the sensitivity of the microwave spectrum to the dielectric constant of water. Studies (1,2) show that can be retrieved via passive microwave observations. While useful, the practical application ofpassive microwave retrievals are inhibited by coarse resolution (ref). Active radar (e.g. Sentinel SAR) offers the potential to retrieve measurements of RZSM at much higher resolution. However, a number of factors complicate this this process, including vegetation, double bounces, and more. 
-
-This study seeks to examine empirical relations between backscatter and biophysical paramters using in Situ SCAN sites as ground truth.
+This study seeks to examine empirical relations between remote sensing data and biophysical paramters using in Situ SCAN sites as ground truth.
 
 ## Methods and Preprocessing
 
@@ -39,10 +37,10 @@ This study seeks to examine empirical relations between backscatter and biophysi
 ### PRISM precipitation data (EE):
 	2-day sums are calculated at each SCAN site to filter out SM observations during saturated conditions
 
-### MODIS / Landsat LAI 
+### Landsat B1 - B7
     
 
-### MODIS / Landsat / Proba NDVI   
+### MODIS / Landsat / Proba NDVI  
 
 
 ### Soil Texture:
@@ -50,10 +48,4 @@ This study seeks to examine empirical relations between backscatter and biophysi
     https://daac.ornl.gov/NACP/guides/NACP_MsTMIP_Unified_NA_Soil_Map.html
     Not using: Harmonized World Soil Database
     http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-v12/en/
-    
-## Notes
-
-### Questions and TODO:
-    LAI --> Above Ground Biomass
-    LAI EE: ee.ImageCollection("MODIS/006/MCD15A3H")
     
